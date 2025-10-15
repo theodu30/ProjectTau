@@ -9,6 +9,7 @@ public class InputManager : MonoBehaviour
 
     bool isMoveEngaged = false;
     Vector2 moveDelta;
+    float zoomDelta;
 
     private void Start()
     {
@@ -33,6 +34,7 @@ public class InputManager : MonoBehaviour
         {
             moveDelta = actions.Move.ReadValue<Vector2>();
         }
+        zoomDelta = actions.Zoom.ReadValue<float>();
     }
 
     public bool IsMoveEngaged() => isMoveEngaged;
@@ -44,4 +46,5 @@ public class InputManager : MonoBehaviour
         }
         return Vector2.zero;
     }
+    public float ZoomDelta() => zoomDelta;
 }
