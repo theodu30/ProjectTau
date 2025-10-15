@@ -1,0 +1,8 @@
+/ProjectTau/.vs
+ProjectTau/.vsconfig
+*.csproj
+/ProjectTau/Library
+/ProjectTau/Logs
+/ProjectTau/obj
+ProjectTau/ProjectTau.sln
+/ProjectTau/UserSettings
